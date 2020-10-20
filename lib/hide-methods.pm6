@@ -1,4 +1,4 @@
-my module hide-methods:ver<0.0.1>:auth<cpan:ELIZABETH> {
+module hide-methods:ver<0.0.1>:auth<cpan:ELIZABETH> {
 
     my %classes{Mu};       # a hash keyed to the actual type objects
     my $lock := Lock.new;  # a lock for concurrent access / updates

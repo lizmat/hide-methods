@@ -7,16 +7,16 @@
   ],
   "depends": [
   ],
-  "description": "hide-methods - hide methods of classes during runtime",
+  "description": "hide methods of classes during runtime",
   "license": "Artistic-2.0",
   "name": "hide-methods",
   "perl": "6.d",
   "provides": {
-    "does-not-exist": "lib/hide-methods.pm6"
+    "hide-methods": "lib/hide-methods.pm6"
   },
   "resources": [
   ],
-  "source-url": "",
+  "source-url": "ssh://github.com/lizmat/hide-methods.git",
   "tags": [
   ],
   "test-depends": [
