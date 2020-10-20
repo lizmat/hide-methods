@@ -1,4 +1,4 @@
-module hide-methods:ver<0.0.1>:auth<cpan:ELIZABETH> {
+module hide-methods:ver<0.0.2>:auth<cpan:ELIZABETH> {
 
     my %classes{Mu};       # a hash keyed to the actual type objects
     my $lock := Lock.new;  # a lock for concurrent access / updates
@@ -125,6 +125,22 @@ to be hidden as well, of course).
 Handles standard method call dispatch and the C<.can> method on classes.
 Does B<not> affect dispatch through C<.?>, C<.+> or C<.*>, or listing
 with the C<.^methods> method.
+
+=head1 SUBROUTINES
+
+=head2 hide-methods
+
+  hide-methods(A,<foo bar baz>);   # hide "foo","bar","baz" methods in A
+  A.&hide-methods(<foo bar baz>);  # same, using method syntax
+
+  my $vault = hide-methods(B,"zippo");  # allow unhiding
+
+  $vault.unhide-methods("zippo");  # make B.zippo available again
+
+The C<hide-methods> subroutine takes a class as the first parameter, and
+one or more names of methods to hide.  It returns a C<Vault> object that
+supports a C<unhide-methods> method, that takes the names of the methods
+that should become available again.
 
 =head1 AUTHOR
 

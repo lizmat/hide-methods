@@ -38,6 +38,21 @@ DESCRIPTION
 
 Handles standard method call dispatch and the `.can` method on classes. Does **not** affect dispatch through `.?`, `.+` or `.*`, or listing with the `.^methods` method.
 
+SUBROUTINES
+===========
+
+hide-methods
+------------
+
+    hide-methods(A,<foo bar baz>);   # hide "foo","bar","baz" methods in A
+    A.&hide-methods(<foo bar baz>);  # same, using method syntax
+
+    my $vault = hide-methods(B,"zippo");  # allow unhiding
+
+    $vault.unhide-methods("zippo");  # make B.zippo available again
+
+The `hide-methods` subroutine takes a class as the first parameter, and one or more names of methods to hide. It returns a `Vault` object that supports a `unhide-methods` method, that takes the names of the methods that should become available again.
+
 AUTHOR
 ======
 

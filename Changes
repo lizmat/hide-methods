@@ -2,5 +2,8 @@ Revision history for hide-methods
 
 {{$NEXT}}
 
+0.0.2  2020-10-20T19:10:33+02:00
+    - Add some more documentation
+
 0.0.1  2020-10-20T19:03:57+02:00
     - Initial version
