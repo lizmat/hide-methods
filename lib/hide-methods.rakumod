@@ -1,4 +1,6 @@
-module hide-methods:ver<0.0.2>:auth<cpan:ELIZABETH> {
+use v6.d;
+
+module hide-methods:ver<0.0.3>:auth<zef:lizmat> {
 
     my %classes{Mu};       # a hash keyed to the actual type objects
     my $lock := Lock.new;  # a lock for concurrent access / updates
@@ -144,14 +146,14 @@ that should become available again.
 
 =head1 AUTHOR
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/hide-methods . Comments and
 Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2020 Elizabeth Mattijsen
+Copyright 2020, 2021 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

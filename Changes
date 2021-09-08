@@ -2,6 +2,12 @@ Revision history for hide-methods
 
 {{$NEXT}}
 
+0.0.3  2021-09-08T14:02:25+02:00
+    - Change file extension to .rakumod
+    - Migrate to zef ecosystem
+    - Update email address
+    - Update copyright year
+
 0.0.2  2020-10-20T19:10:33+02:00
     - Add some more documentation
 

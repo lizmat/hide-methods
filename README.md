@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/hide-methods/workflows/test/badge.svg)](https://github.com/lizmat/hide-methods/actions)
+
 NAME
 ====
 
@@ -56,14 +58,14 @@ The `hide-methods` subroutine takes a class as the first parameter, and one or m
 AUTHOR
 ======
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/hide-methods . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2020 Elizabeth Mattijsen
+Copyright 2020, 2021 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
