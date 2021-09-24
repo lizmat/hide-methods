@@ -1,6 +1,6 @@
 use v6.d;
 
-module hide-methods:ver<0.0.4>:auth<zef:lizmat> {
+module hide-methods:ver<0.0.5>:auth<zef:lizmat> {
 
     my %classes{Mu};       # a hash keyed to the actual type objects
     my $lock := Lock.new;  # a lock for concurrent access / updates
