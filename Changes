@@ -2,6 +2,9 @@ Revision history for hide-methods
 
 {{$NEXT}}
 
+0.0.4  2021-09-24T21:02:58+02:00
+    - Fix regression on new-disp, jnthn++
+
 0.0.3  2021-09-08T14:02:25+02:00
     - Change file extension to .rakumod
     - Migrate to zef ecosystem

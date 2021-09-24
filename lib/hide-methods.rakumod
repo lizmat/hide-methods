@@ -1,6 +1,6 @@
 use v6.d;
 
-module hide-methods:ver<0.0.3>:auth<zef:lizmat> {
+module hide-methods:ver<0.0.4>:auth<zef:lizmat> {
 
     my %classes{Mu};       # a hash keyed to the actual type objects
     my $lock := Lock.new;  # a lock for concurrent access / updates
@@ -47,7 +47,8 @@ module hide-methods:ver<0.0.3>:auth<zef:lizmat> {
                     sub wrapper(\SELF, |c) is hidden-from-backtrace {
                         # cannot use nextcallee because that would refer
                         # to the original method that got wrapped.
-                        if $class.^mro[1].can($name).head -> &nextone {
+                        my $type := $class.^mro[1];
+                        if $type.^find_method('can')($type,$name).head -> &nextone {
                             nextone(SELF, |c)
                         }
                         else {
