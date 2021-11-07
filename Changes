@@ -2,6 +2,9 @@ Revision history for hide-methods
 
 {{$NEXT}}
 
+0.0.6  2021-11-07T12:55:25+01:00
+    - Remove module statement, we don't need it anymore
+
 0.0.5  2021-09-24T21:09:51+02:00
     - Argh, wrong App::Mi6 version uploaded to CPAN instead of zef
 
