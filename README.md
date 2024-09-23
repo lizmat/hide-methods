@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/lizmat/hide-methods/workflows/test/badge.svg)](https://github.com/lizmat/hide-methods/actions)
+[![Actions Status](https://github.com/lizmat/hide-methods/actions/workflows/linux.yml/badge.svg)](https://github.com/lizmat/hide-methods/actions) [![Actions Status](https://github.com/lizmat/hide-methods/actions/workflows/macos.yml/badge.svg)](https://github.com/lizmat/hide-methods/actions) [![Actions Status](https://github.com/lizmat/hide-methods/actions/workflows/windows.yml/badge.svg)](https://github.com/lizmat/hide-methods/actions)
 
 NAME
 ====
@@ -46,12 +46,14 @@ SUBROUTINES
 hide-methods
 ------------
 
-    hide-methods(A,<foo bar baz>);   # hide "foo","bar","baz" methods in A
-    A.&hide-methods(<foo bar baz>);  # same, using method syntax
+```raku
+hide-methods(A,<foo bar baz>);   # hide "foo","bar","baz" methods in A
+A.&hide-methods(<foo bar baz>);  # same, using method syntax
 
-    my $vault = hide-methods(B,"zippo");  # allow unhiding
+my $vault = hide-methods(B,"zippo");  # allow unhiding
 
-    $vault.unhide-methods("zippo");  # make B.zippo available again
+$vault.unhide-methods("zippo");  # make B.zippo available again
+```
 
 The `hide-methods` subroutine takes a class as the first parameter, and one or more names of methods to hide. It returns a `Vault` object that supports a `unhide-methods` method, that takes the names of the methods that should become available again.
 
@@ -62,10 +64,12 @@ Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/hide-methods . Comments and Pull Requests are welcome.
 
+If you like this module, or what I'm doing more generally, committing to a [small sponsorship](https://github.com/sponsors/lizmat/) would mean a great deal to me!
+
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2020, 2021 Elizabeth Mattijsen
+Copyright 2020, 2021, 2024 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

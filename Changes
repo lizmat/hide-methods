@@ -1,6 +1,9 @@
 Revision history for hide-methods
 
 {{$NEXT}}
+    - Add sponsor button and link
+    - Modernnize pod and test-file extension
+    - Update copyright year
 
 0.0.6  2021-11-07T12:55:25+01:00
     - Remove module statement, we don't need it anymore

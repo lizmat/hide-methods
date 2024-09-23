@@ -128,12 +128,16 @@ with the C<.^methods> method.
 
 =head2 hide-methods
 
-  hide-methods(A,<foo bar baz>);   # hide "foo","bar","baz" methods in A
-  A.&hide-methods(<foo bar baz>);  # same, using method syntax
+=begin code :lang<raku>
 
-  my $vault = hide-methods(B,"zippo");  # allow unhiding
+hide-methods(A,<foo bar baz>);   # hide "foo","bar","baz" methods in A
+A.&hide-methods(<foo bar baz>);  # same, using method syntax
 
-  $vault.unhide-methods("zippo");  # make B.zippo available again
+my $vault = hide-methods(B,"zippo");  # allow unhiding
+
+$vault.unhide-methods("zippo");  # make B.zippo available again
+
+=end code
 
 The C<hide-methods> subroutine takes a class as the first parameter, and
 one or more names of methods to hide.  It returns a C<Vault> object that
@@ -147,9 +151,13 @@ Elizabeth Mattijsen <liz@raku.rocks>
 Source can be located at: https://github.com/lizmat/hide-methods . Comments and
 Pull Requests are welcome.
 
+If you like this module, or what I'm doing more generally, committing to a
+L<small sponsorship|https://github.com/sponsors/lizmat/>  would mean a great
+deal to me!
+
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2020, 2021 Elizabeth Mattijsen
+Copyright 2020, 2021, 2024 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

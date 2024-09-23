@@ -16,7 +16,7 @@
   },
   "resources": [
   ],
-  "source-url": "ssh://github.com/lizmat/hide-methods.git",
+  "source-url": "https://github.com/lizmat/hide-methods.git",
   "tags": [
   ],
   "test-depends": [
