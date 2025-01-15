@@ -1,3 +1,4 @@
 .precomp/
 /hide-methods-*
 /releases/
+*.rakucov
