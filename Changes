@@ -1,6 +1,8 @@
 Revision history for hide-methods
 
 {{$NEXT}}
+    - Modernize META
+    - Update copyright year
 
 0.0.7  2024-09-23T14:49:13+02:00
     - Add sponsor button and link

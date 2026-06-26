@@ -10,14 +10,21 @@
   "description": "hide methods of classes during runtime",
   "license": "Artistic-2.0",
   "name": "hide-methods",
-  "perl": "6.d",
   "provides": {
     "hide-methods": "lib/hide-methods.rakumod"
   },
+  "raku": "6.d",
   "resources": [
   ],
-  "source-url": "https://github.com/lizmat/hide-methods.git",
+  "source-url": "https://codeberg.org/lizmat/hide-methods.git",
+  "support": {
+    "bugtracker": "https://codeberg.org/lizmat/hide-methods/issues",
+    "email": "liz@raku.rocks",
+    "source": "https://codeberg.org/lizmat/hide-methods.git"
+  },
   "tags": [
+    "MRO",
+    "METHODS"
   ],
   "test-depends": [
   ],

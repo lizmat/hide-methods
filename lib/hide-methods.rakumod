@@ -4,7 +4,7 @@ my $lock := Lock.new;  # a lock for concurrent access / updates
 # marker for methods wrapped here
 my role MethodWrapped {
     has $.hidden is rw;
-    method is-hidden-from-backtrace(--> True) { }
+    method is-hidden-from-backtrace(--> True) { }  # UNCOVERABLE
 }
 
 # class for keeping deleted methods information
